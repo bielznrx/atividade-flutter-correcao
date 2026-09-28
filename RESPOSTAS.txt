@@ -1,0 +1,31 @@
+NOME DO ALUNO: Nicolas e Heitor
+
+TURMA: 2º C
+
+QUANTIDADE DE ERROS ENCONTRADOS: Foram varios erros, listei os principais que não generalizou nenhum arquivo, pois oque estavam na pasta de 
+screens tinham muitos erros.
+
+
+ERRO 1: Erro de importação
+Arquivo: main.dart
+Problema encontrado: import 'screens/login_screen.dart';
+Não foi possivel importar a tela de login.
+Correção realizada: import 'login_screen.dart';
+
+ERRO 2: yaml
+Arquivo: pubspec.yaml
+Problema encontrado: O arquivo exigia sdk: ">=3.10.0 <4.0.0", mas o Dart disponível é 3.8.1.o que causava o erro no pubget
+Correção realizada: 
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+ERRO 3: não estava sendo chamado
+Arquivo: main.dart
+Problema encontrado: o runApp não estava sendo chamado, apenas referenciado
+Correção realizada:void main() {
+  runApp(const MeuApp());
+}
+
+
+
+Continue registrando os demais erros encontrados.
